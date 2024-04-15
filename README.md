@@ -21,22 +21,58 @@ To write a program to perform selection sort and insertion sort using python pro
 i)	#Selection Sort
 ```
 
+num=eval(input())
 
+for i in range(len(num)):
 
+    low=i
 
+    for j in range(i+1,len(num)):
+
+        if num[j]<num[low]:
+
+            low=j
+
+   num[i],num[low]=num[low],num[i]
+
+print(num)
 
 ```
 ii)	#Insertion Sort
 ```
 
+num=eval(input())
 
+for i in range(1,len(num)):
 
+    insert=num[i]
 
+    j=i-1
 
+    while j>=0 and num[j]>=insert:
+
+        num[j+1]=num[j]
+
+        j=j-1
+
+    num[j+1]=insert
+
+print(num)
 
 ```
 
 ## Output:
+
+i) #Selection Sort
+
+![Screenshot 2024-04-15 210818](https://github.com/RITHISHlearn/Sorting-Algorithms/assets/145446645/81ef92ff-b6a7-42a8-9151-b1aa997a2570)
+
+
+ii) #Insertion Sort
+
+
+![Screenshot 2024-04-15 210837](https://github.com/RITHISHlearn/Sorting-Algorithms/assets/145446645/43a2b980-09e3-42a7-9c6e-dd9e8eaa76cb)
+
 
 
 ## Result:
